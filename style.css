@@ -303,7 +303,7 @@ section { padding: 6rem 3rem; }
 }
 
 .about-img-slot {
-  aspect-ratio: 4/3;
+  aspect-ratio: 19/10;
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: 6px;
