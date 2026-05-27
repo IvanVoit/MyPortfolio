@@ -1,104 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan | Roblox Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IvanVoit — Portfolio</title>
+  <meta name="description" content="Ivan's portfolio — editor, coder, creator." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <nav>
-        <div class="container">
-            <h1>Ivan</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <!-- ── NAV ── -->
+  <nav>
+    <a class="nav-logo" href="#hero">Ivan<span>Voit</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag">Available for projects</div>
+        <h1 class="hero-name">
+          Ivan<br/>
+          <span class="line2">Voitekhovych</span>
+        </h1>
+        <p class="hero-role">
+          &gt; <span id="typewriter">Creator</span><span class="cursor"></span>
+        </p>
+        <p class="hero-desc">
+          I build things on the internet. From video editing and web development 
+          to Discord servers and 3D modeling — I make ideas come to life.
+        </p>
+        <div class="hero-btns">
+          <a href="#skills" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
         </div>
-    </nav>
+      </div>
 
-    <header id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio. I'm Ivan, a starting Roblox developer interested in building, low-poly 3D modeling, and game creation. I create environments and assets in Blender and work on interactive projects.</p>
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <div class="avatar-img-slot">
+            <!-- Replace src below with your photo path, then remove display:none in CSS -->
+            <img src="assets/profile.jpg" alt="Ivan Voitekhovych" />
+            <span class="placeholder-icon">🧑‍💻</span>
+            <span class="placeholder-text">your photo here</span>
+          </div>
+          <div class="avatar-badge">
+            <strong>9+</strong> skills &amp; counting
+          </div>
         </div>
-    </header>
-
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">My Creations</h2>
-            
-            <div class="project-grid">
-                
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="Images/Screenshot 2026-05-14 203258.png" class="main-thumb" alt="Main Project 1">
-                    <div class="project-info">
-                        <h3>Roblox Jumping Simulator</h3>
-                        <p>A progression-based project featuring custom low-poly environments and upgrade systems.</p>
-                        <button class="btn toggle-details">View Full Project</button>
-                    </div>
-                    
-                    <div class="project-details">
-                        <div class="details-inner">
-                            
-                            <!-- Detail Item 1 -->
-                            <div class="detail-item">
-                                <img src="Images/Screenshot 2026-05-14 201948.png" alt="Map View">
-                                <div class="detail-text">
-                                    <h4>Environment Design</h4>
-                                    <p>Write here about the map. For example: "I designed the floating islands using a low-poly style to keep the game optimized for mobile players while maintaining a clean look."</p>
-                                </div>
-                            </div>
-
-                            <!-- Detail Item 2 -->
-                            <div class="detail-item">
-                                <img src="Images/Screenshot 2026-05-14 202034.png" alt="Mechanics">
-                                <div class="detail-text">
-                                    <h4>Gameplay Mechanics</h4>
-                                    <p>Write about the scripts here. "The jumping system uses a custom multiplier script that saves progress to a DataStore, ensuring players don't lose their stats."</p>
-                                </div>
-                            </div>
-
-                            <!-- Detail Item 3 -->
-                            <div class="detail-item">
-                                <img src="Images/Screenshot 2026-05-14 203554.png" alt="Models">
-                                <div class="detail-text">
-                                    <h4>Custom 3D Assets</h4>
-                                    <p>Write about Blender here. "I modeled all the coins, upgrade pads, and the pet eggs inside Blender using smooth shading and optimized geometry."</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- (Copy the structure above for Project 2 and Project 3) -->
-
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="social-links">
-                <a href="https://github.com/YourGitHubName" target="_blank">GitHub</a>
-                <a href="mailto:0binirovoni0@gmail.com">Email</a>
-                <a href="https://discord.com/users/YourDiscordID" target="_blank">Discord</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Image Zoom Modal -->
-    <div id="image-modal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="full-image">
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-slot reveal">
+          <!-- Replace src below with an image path, then remove display:none in CSS -->
+          <img src="assets/about.jpg" alt="About Ivan" />
+          <span class="placeholder-icon">🖼️</span>
+          <span style="font-size:0.65rem;opacity:.4;letter-spacing:.08em;text-transform:uppercase;">add an image here</span>
+        </div>
+
+        <div class="about-text reveal">
+          <h3>Hey, I'm Ivan 👋</h3>
+          <p>
+            I'm a student developer and creative based in Barcelona. 
+            I love working on a wide range of digital projects — whether that's 
+            cutting together video content, writing clean code, or designing 
+            entire Discord communities from scratch.
+          </p>
+          <p>
+            Currently studying at ITB, I spend my free time leveling up my skills 
+            across editing, modeling, and web development. I believe in learning by 
+            doing — every project teaches me something new.
+          </p>
+          <p>
+            If you have a project idea or just want to collaborate, don't hesitate 
+            to reach out!
+          </p>
+
+          <div class="about-tags">
+            <span class="tag accent">Barcelona 📍</span>
+            <span class="tag">Student @ ITB</span>
+            <span class="tag">Open to collabs</span>
+            <span class="tag">GitHub active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS / PROJECTS ── -->
+  <section id="skills">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <a class="skill-card reveal" data-href="./Editing/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">🎬</div>
+          <div class="skill-name">Editing</div>
+          <p class="skill-desc">
+            Video editing, motion graphics, colour grading and storytelling through cuts.
+            From short-form content to full productions.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./Coding/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">💻</div>
+          <div class="skill-name">Coding</div>
+          <p class="skill-desc">
+            Programming in multiple languages — scripts, tools, bots and more. 
+            Problem-solving through clean, efficient code.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./SocialMedia/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">📱</div>
+          <div class="skill-name">Social Media</div>
+          <p class="skill-desc">
+            Content strategy, post design, growth tactics and community engagement 
+            across platforms like Instagram, TikTok and YouTube.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./Discord/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">💬</div>
+          <div class="skill-name">Discord Servers</div>
+          <p class="skill-desc">
+            Full server setup: custom bots, roles, channels, moderation systems and 
+            community structures built from the ground up.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./Modeling/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">🗿</div>
+          <div class="skill-name">Modeling</div>
+          <p class="skill-desc">
+            3D modeling and sculpting. Creating assets, characters and environments 
+            for games, renders and animations.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./Building/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">🧱</div>
+          <div class="skill-name">Building (Roblox)</div>
+          <p class="skill-desc">
+            Roblox studio builds — maps, obby courses, roleplay environments 
+            and full game worlds with scripted interactions.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./WebDev/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">Web Development</div>
+          <p class="skill-desc">
+            Designing and building websites — HTML, CSS, JavaScript. 
+            From simple landing pages to interactive multi-page projects.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+        <a class="skill-card reveal" data-href="./Maintenance/">
+          <div class="skill-img-slot">
+            <img src="" alt="" />
+            <span>preview image</span>
+          </div>
+          <div class="skill-icon">🔧</div>
+          <div class="skill-name">Maintenance</div>
+          <p class="skill-desc">
+            Tech support, troubleshooting, device maintenance and keeping 
+            systems running smoothly. Reliable and methodical.
+          </p>
+          <div class="skill-arrow">View Projects →</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-inner reveal">
+        <p class="contact-lead">Let's build something together.</p>
+        <p class="contact-sub">
+          Have a project in mind, a collab idea, or just want to say hi? 
+          Reach out through any of the channels below — I usually respond fast.
+        </p>
+
+        <div class="contact-links">
+
+          <a class="contact-link" href="https://github.com/IvanVoit" target="_blank" rel="noopener">
+            <span class="contact-link-icon">🐙</span>
+            <div class="contact-link-info">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">github.com/IvanVoit</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a class="contact-link" href="mailto:ivan.voitekhovych.7e9@itb.cat">
+            <span class="contact-link-icon">✉️</span>
+            <div class="contact-link-info">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">ivan.voitekhovych.7e9@itb.cat</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a class="contact-link" href="https://discord.com/users/ivanvoit" target="_blank" rel="noopener">
+            <span class="contact-link-icon">🎮</span>
+            <div class="contact-link-info">
+              <div class="contact-link-label">Discord</div>
+              <div class="contact-link-value">ivanvoit</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-copy">© 2025 Ivan Voitekhovych — All rights reserved</span>
+    <span class="footer-status">Online &amp; building</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
