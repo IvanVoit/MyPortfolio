@@ -68,3 +68,30 @@ console.log(
   'background: #00f5a0; color: #090c10; font-size: 16px; font-weight: bold; padding: 6px 12px;'
 );
 console.log('%c Checkout my GitHub: https://github.com/IvanVoit', 'color: #7d8590; font-size: 12px;');
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. DROPDOWN TOGGLE
+    const buttons = document.querySelectorAll('.toggle-details');
+    buttons.forEach(button => {
+        button.onclick = function() {
+            const card = this.closest('.project-card');
+            const details = card.querySelector('.project-details');
+            details.classList.toggle('active');
+            this.textContent = details.classList.contains('active') ? 'Close Project' : 'View Project Details';
+        };
+    });
+
+    // 2. IMAGE ZOOM
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("full-image");
+    
+    // This looks for ANY image in the projects section
+    document.querySelector('#projects').addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
+            modal.style.display = "block";
+            modalImg.src = e.target.src;
+        }
+    });
+
+    modal.onclick = () => modal.style.display = "none";
+});
