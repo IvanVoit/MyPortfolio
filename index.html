@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IvanVoit — Portfolio</title>
-  <meta name="description" content="Ivan's portfolio — editor, coder, creator." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── NAV ── -->
   <nav>
     <a class="nav-logo" href="#hero">Ivan<span>Voit</span></a>
     <ul class="nav-links">
@@ -20,47 +18,33 @@
     </ul>
   </nav>
 
-  <!-- ── HERO ── -->
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-grid"></div>
     <div class="hero-glow"></div>
     <div class="hero-inner">
       <div class="hero-text">
         <div class="hero-tag">Available for projects</div>
-        <h1 class="hero-name">
-          Ivan<br/>
-          <span class="line2">Voitekhovych</span>
-        </h1>
-        <p class="hero-role">
-          &gt; <span id="typewriter">Creator</span><span class="cursor"></span>
-        </p>
-        <p class="hero-desc">
-          I build things on the internet. From video editing and web development 
-          to Discord servers and 3D modeling — I make ideas come to life.
-        </p>
+        <h1 class="hero-name">Ivan<br/><span class="line2">Voitekhovych</span></h1>
+        <p class="hero-role">&gt; <span id="typewriter">Creator</span><span class="cursor"></span></p>
+        <p class="hero-desc">I build things on the internet. From video editing and web development to Discord servers and 3D modeling.</p>
         <div class="hero-btns">
           <a href="#skills" class="btn btn-primary">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Get in Touch</a>
         </div>
       </div>
-
       <div class="hero-visual">
         <div class="avatar-frame">
           <div class="avatar-img-slot">
-            <!-- Replace src below with your photo path, then remove display:none in CSS -->
-            <img src="assets/profile.jpg" alt="Ivan Voitekhovych" />
-            <span class="placeholder-icon">🧑‍💻</span>
-            <span class="placeholder-text">your photo here</span>
+            <img src="assets/ivan.png" alt="Ivan" style="display: block;">
           </div>
-          <div class="avatar-badge">
-            <strong>9+</strong> skills &amp; counting
-          </div>
+          <div class="avatar-badge"><strong>9+</strong> skills &amp; counting</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── ABOUT ── -->
+  <!-- ABOUT -->
   <section id="about">
     <div style="max-width:1100px;margin:0 auto;">
       <div class="section-header reveal">
@@ -68,46 +52,25 @@
         <h2 class="section-title">About Me</h2>
         <div class="section-line"></div>
       </div>
-
       <div class="about-grid">
         <div class="about-img-slot reveal">
-          <!-- Replace src below with an image path, then remove display:none in CSS -->
-          <img src="assets/about.jpg" alt="About Ivan" />
-          <span class="placeholder-icon">🖼️</span>
-          <span style="font-size:0.65rem;opacity:.4;letter-spacing:.08em;text-transform:uppercase;">add an image here</span>
+          <img src="assets/myportfolioimage.png" alt="About Ivan" style="display: block;">
         </div>
-
         <div class="about-text reveal">
           <h3>Hey, I'm Ivan 👋</h3>
-          <p>
-            I'm a student developer and creative based in Barcelona. 
-            I love working on a wide range of digital projects — whether that's 
-            cutting together video content, writing clean code, or designing 
-            entire Discord communities from scratch.
-          </p>
-          <p>
-            Currently studying at ITB, I spend my free time leveling up my skills 
-            across editing, modeling, and web development. I believe in learning by 
-            doing — every project teaches me something new.
-          </p>
-          <p>
-            If you have a project idea or just want to collaborate, don't hesitate 
-            to reach out!
-          </p>
-
+          <p>I'm a student developer and creative based in Barcelona studying at ITB. I love working on digital projects — video content, coding, or designing Discord communities.</p>
           <div class="about-tags">
             <span class="tag accent">Barcelona 📍</span>
             <span class="tag">Student @ ITB</span>
             <span class="tag">Open to collabs</span>
-            <span class="tag">GitHub active</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── SKILLS / PROJECTS ── -->
- <section id="skills">
+  <!-- SKILLS -->
+  <section id="skills">
     <div style="max-width:1200px;margin:0 auto;">
       <div class="section-header reveal">
         <span class="section-num">02</span>
@@ -122,23 +85,14 @@
           <div class="skill-main-content">
             <div class="skill-icon">🎬</div>
             <div class="skill-name">Editing</div>
-            <p class="skill-desc">100+ hours experience. Professional editing. 20+ videos completed.</p>
+            <p class="skill-desc">100+ hours. 20+ videos edited professionally.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item">
-                <img src="Images/school_project.png" alt="School Project">
-                <p><strong>School Project Video:</strong> Video created for a specific academic assignment.</p>
-              </div>
-              <div class="story-item">
-                <img src="Images/mobile_devices.png" alt="Mobile Devices">
-                <p><strong>Mobile Content:</strong> Videos focused on mobile devices and technology.</p>
-              </div>
-              <div class="story-item">
-                <img src="Images/my_game_video.png" alt="Game Video">
-                <p><strong>Game Trailer:</strong> Video showcase for a game developed by me.</p>
-              </div>
+              <div class="story-item"><img src="assets/editing1.png"><p><strong>School Project:</strong> Video created for an academic assignment.</p></div>
+              <div class="story-item"><img src="assets/editing2.png"><p><strong>Mobile Content:</strong> Videos about mobile devices and technology.</p></div>
+              <div class="story-item"><img src="assets/editing3.png"><p><strong>Game Trailer:</strong> Video showcase for a game made by me.</p></div>
             </div>
           </div>
         </div>
@@ -148,17 +102,16 @@
           <div class="skill-main-content">
             <div class="skill-icon">💻</div>
             <div class="skill-name">Coding</div>
-            <p class="skill-desc">Python & Web Dev. AI integration in workflows for efficient problem solving.</p>
+            <p class="skill-desc">Python & Web Dev with AI integration workflows.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <p>• Programming in Python
-              • Advanced AI-assisted development
-              • HTML, CSS, and JS with AI integration</p>
-              <div class="story-item"><img src="Images/coding_1.png" alt="Python"><p>Python programming & scripts.</p></div>
-              <div class="story-item"><img src="Images/coding_2.png" alt="AI Logic"><p>AI implementation in coding projects.</p></div>
-              <div class="story-item"><img src="Images/coding_3.png" alt="Web Code"><p>Web development and logic.</p></div>
+              <p>• Programming in Python with AI
+              • HTML, CSS, and JS development</p>
+              <div class="story-item"><img src="assets/coding1.png"><p>Python scripts and backend logic.</p></div>
+              <div class="story-item"><img src="assets/coding2.png"><p>AI-assisted development workflow.</p></div>
+              <div class="story-item"><img src="assets/coding3.png"><p>Advanced coding projects.</p></div>
             </div>
           </div>
         </div>
@@ -168,31 +121,31 @@
           <div class="skill-main-content">
             <div class="skill-icon">📱</div>
             <div class="skill-name">Social Media</div>
-            <p class="skill-desc">Content creator across YouTube, TikTok, and Instagram platforms.</p>
+            <p class="skill-desc">Content creator on YouTube, TikTok, and Instagram.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item"><img src="Images/youtube_channel.png" alt="YouTube"><p><strong>YouTube:</strong> Content strategy and channel management.</p></div>
-              <div class="story-item"><img src="Images/tiktok_channel.png" alt="TikTok"><p><strong>TikTok:</strong> Short-form content and viral trends.</p></div>
-              <div class="story-item"><img src="Images/instagram_channel.png" alt="Instagram"><p><strong>Instagram:</strong> Community engagement and visual posts.</p></div>
+              <div class="story-item"><img src="assets/social1.png"><p>My YouTube channel content.</p></div>
+              <div class="story-item"><img src="assets/social2.png"><p>My TikTok channel growth.</p></div>
+              <div class="story-item"><img src="assets/social3.png"><p>My Instagram community.</p></div>
             </div>
           </div>
         </div>
 
-        <!-- 4. DISCORD SERVERS -->
+        <!-- 4. DISCORD -->
         <div class="skill-card reveal">
           <div class="skill-main-content">
             <div class="skill-icon">💬</div>
             <div class="skill-name">Discord</div>
-            <p class="skill-desc">Expert in server configuration from scratch, roles, and bot monitoring.</p>
+            <p class="skill-desc">Server configuration, roles, and bot monitoring.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item"><img src="Images/discord_game.png" alt="Game Server"><p><strong>Personal Game:</strong> Server made for my own project.</p></div>
-              <div class="story-item"><img src="Images/discord_minecraft.png" alt="Minecraft Clan"><p><strong>Minecraft Clan:</strong> Setup for a competitive community.</p></div>
-              <div class="story-item"><img src="Images/discord_community.png" alt="Community Server"><p><strong>General Community:</strong> Social structure for my community.</p></div>
+              <div class="story-item"><img src="assets/discord1.png"><p>Discord server made for my game.</p></div>
+              <div class="story-item"><img src="assets/discord2.png"><p>Discord server for a Minecraft clan.</p></div>
+              <div class="story-item"><img src="assets/discord3.png"><p>Discord server for my community.</p></div>
             </div>
           </div>
         </div>
@@ -202,14 +155,14 @@
           <div class="skill-main-content">
             <div class="skill-icon">🗿</div>
             <div class="skill-name">Modeling</div>
-            <p class="skill-desc">50+ hours in Blender. Focus on low-poly assets and game optimization.</p>
+            <p class="skill-desc">50+ hours in Blender. Low-poly specialist.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item"><img src="Images/lowpoly_tree.png" alt="Tree"><p><strong>Low-Poly Tree:</strong> Optimized nature asset.</p></div>
-              <div class="story-item"><img src="Images/gameboy.png" alt="Gameboy"><p><strong>Game Boy:</strong> Detailed 3D model of the classic console.</p></div>
-              <div class="story-item"><img src="Images/roblox_assets.png" alt="Roblox Assets"><p><strong>Roblox Pack:</strong> Multiple assets made for game worlds.</p></div>
+              <div class="story-item"><img src="assets/modeling1.png"><p>Low-poly 3D Tree.</p></div>
+              <div class="story-item"><img src="assets/modeling2.png"><p>3D modeled Game Boy.</p></div>
+              <div class="story-item"><img src="assets/modeling3.png"><p>Roblox game assets collection.</p></div>
             </div>
           </div>
         </div>
@@ -219,14 +172,14 @@
           <div class="skill-main-content">
             <div class="skill-icon">🧱</div>
             <div class="skill-name">Building</div>
-            <p class="skill-desc">Roblox Studio builder. Two full maps and various interactive environments.</p>
+            <p class="skill-desc">Roblox Studio builder with experience in full maps.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item"><img src="Images/roblox_shop.png" alt="Shop"><p><strong>Shop Model:</strong> Interior building for an upcoming map.</p></div>
-              <div class="story-item"><img src="Images/roblox_door.png" alt="Level Door"><p><strong>Level 5 Door:</strong> Scripted environment interaction.</p></div>
-              <div class="story-item"><img src="Images/roblox_world.png" alt="World"><p><strong>Game World:</strong> Unfinished massive environment project.</p></div>
+              <div class="story-item"><img src="assets/building1.png"><p>Shop interior for a new map.</p></div>
+              <div class="story-item"><img src="assets/building2.png"><p>Level 5 restricted access door.</p></div>
+              <div class="story-item"><img src="assets/building3.png"><p>Unfinished massive world project.</p></div>
             </div>
           </div>
         </div>
@@ -236,14 +189,14 @@
           <div class="skill-main-content">
             <div class="skill-icon">🌐</div>
             <div class="skill-name">Web Dev</div>
-            <p class="skill-desc">Creator of ClashToPlay.com. Integrating AI tools with personal coding effort.</p>
+            <p class="skill-desc">Creator of ClashToPlay.com and academic projects.</p>
             <div class="skill-arrow">View My Work ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <div class="story-item"><img src="Images/clash_to_play.png" alt="ClashToPlay"><p><strong>ClashToPlay.com:</strong> My main game and website.</p></div>
-              <div class="story-item"><img src="Images/school_web.png" alt="School Web"><p><strong>School Project:</strong> Webpage designed for education.</p></div>
-              <div class="story-item"><img src="Images/other_portfolio.png" alt="Portfolio"><p><strong>Previous Work:</strong> My other personal portfolio site.</p></div>
+              <div class="story-item"><img src="assets/web1.png"><p><strong>ClashToPlay.com:</strong> My main game webpage.</p></div>
+              <div class="story-item"><img src="assets/web2.png"><p>Webpage made for a school project.</p></div>
+              <div class="story-item"><img src="assets/web3.png"><p>One of my previous portfolio designs.</p></div>
             </div>
           </div>
         </div>
@@ -253,37 +206,43 @@
           <div class="skill-main-content">
             <div class="skill-icon">🔧</div>
             <div class="skill-name">Maintenance</div>
-            <p class="skill-desc">Hardware specialist. Experience with 10+ PC tower assemblies.</p>
+            <p class="skill-desc">Experience assembling 10+ PC towers from scratch.</p>
             <div class="skill-arrow">View Details ↓</div>
           </div>
           <div class="skill-details">
             <div class="details-inner">
-              <p><strong>Hardware Experience:</strong>
-              I have extensive experience assembling and disassembling computer equipment, specifically desktop towers.
-
-              I have manually disassembled and reassembled more than 10 computers from scratch. Every single one has worked perfectly without any technical issues after reassembly. I focus on cable management and methodical component placement.</p>
+              <p>I have disassembled and reassembled more than 10 computers (PC towers), and they have always worked perfectly without any problems. Methodical and reliable hardware setup.</p>
             </div>
           </div>
         </div>
 
       </div>
     </div>
-</section>
-<!-- MODAL PARA ZOOM (PONER ANTES DEL </body>) -->
-<div id="image-modal" class="modal">
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="contact-lead">Let's build something together.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/IvanVoit" target="_blank"><span class="contact-link-icon">🐙</span><div class="contact-link-info"><div class="contact-link-label">GitHub</div><div class="contact-link-value">github.com/IvanVoit</div></div><span class="contact-link-arrow">→</span></a>
+          <a class="contact-link" href="mailto:ivan.voitekhovych.7e9@itb.cat"><span class="contact-link-icon">✉️</span><div class="contact-link-info"><div class="contact-link-label">Email</div><div class="contact-link-value">ivan.voitekhovych.7e9@itb.cat</div></div><span class="contact-link-arrow">→</span></a>
+          <a class="contact-link" href="https://discord.com/users/ivanvoit" target="_blank"><span class="contact-link-icon">🎮</span><div class="contact-link-info"><div class="contact-link-label">Discord</div><div class="contact-link-value">ivanvoit</div></div><span class="contact-link-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="image-modal" class="modal">
     <span class="close-modal">&times;</span>
     <img class="modal-content" id="full-image">
-</div>
-  
-<div id="image-modal" class="modal">
-    <span class="close-modal">&times;</span>
-    <img class="modal-content" id="full-image">
-</div>
-  <!-- ── FOOTER ── -->
-  <footer>
-    <span class="footer-copy">© 2025 Ivan Voitekhovych — All rights reserved</span>
-    <span class="footer-status">Online &amp; building</span>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
