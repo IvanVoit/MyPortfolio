@@ -68,3 +68,35 @@ console.log(
   'background: #00f5a0; color: #090c10; font-size: 16px; font-weight: bold; padding: 6px 12px;'
 );
 console.log('%c Checkout my GitHub: https://github.com/IvanVoit', 'color: #7d8590; font-size: 12px;');
+// Keep your existing Reveal and Typewriter code...
+
+// ── SKILL CARD EXPANSION ──
+document.querySelectorAll('.skill-card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    // If we click an image, the zoom logic will handle it, don't close the card
+    if (e.target.tagName === 'IMG') return;
+
+    // Toggle this card
+    const isActive = card.classList.contains('active');
+    
+    // Close other cards (optional - remove if you want multiple open)
+    document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
+
+    if (!isActive) {
+      card.classList.add('active');
+    }
+  });
+});
+
+// ── IMAGE ZOOM (MODAL) ──
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("full-image");
+
+document.addEventListener('click', (e) => {
+    if (e.target.tagName === 'IMG' && e.target.closest('.skill-details')) {
+        modal.style.display = "block";
+        modalImg.src = e.target.src;
+    }
+});
+
+modal.onclick = () => modal.style.display = "none";
