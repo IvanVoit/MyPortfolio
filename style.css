@@ -579,3 +579,87 @@ footer {
   .nav-links { display: none; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+
+/* --- EXPANSION LOGIC --- */
+.skill-card {
+    cursor: pointer;
+    height: auto;
+    display: block; /* Change from flex to block */
+}
+
+.skill-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--bg);
+    margin: 0 -1.75rem -1.75rem -1.75rem; /* Aligns with card edges */
+}
+
+.skill-card.active .skill-details {
+    max-height: 2000px; /* Big enough to fit content */
+    border-top: 1px solid var(--border);
+    margin-top: 1.5rem;
+}
+
+.details-inner {
+    padding: 1.75rem;
+}
+
+.details-story {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.story-item img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin-bottom: 0.75rem;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.story-item img:hover { transform: scale(1.02); }
+
+.story-item p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    white-space: pre-line; /* Respects line breaks */
+}
+
+.skill-card.active .skill-arrow {
+    transform: rotate(180deg);
+}
+
+/* --- ZOOM MODAL --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    padding: 40px;
+    cursor: zoom-out;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: zoom 0.3s;
+}
+
+@keyframes zoom { from {transform: translateY(-50%) scale(0.8);} to {transform: translateY(-50%) scale(1);} }
+
+.close-modal {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: #fff; font-size: 40px; cursor: pointer;
+}
